@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | SysMax Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-link">
+  <div class="logo-area">
+    <img src="images/logo.png" alt="SysMax Technologies Logo" class="logo-img">
+
+    <div class="company-text">
+      <div class="brand-name">
+        <span class="sys">Sys</span><span class="max">Max</span>
+      </div>
+      <div class="tech">Technologies</div>
+    </div>
+  </div>
+</a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart 🛒 <span id="cartCount">0</span></a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Products</h1>
+  <p>Order Computers & Accessories Online</p>
+</section>
+
+<section class="highlights">
+
+  <div class="product-card">
+  
+  <img src="images/desktop.jpg"
+  alt="Desktop Computer"onclick="openModal(this)">
+  <h3>Desktop Computer</h3>
+  <p>₹25,000</p>
+  <button onclick="addToCart('Desktop Computer',25000)">Add to Cart</button>
+  </div>
+
+
+  <div class="product-card">
+  <img src="images/laptop.jpg" alt="Laptop" onclick="openModal(this)">
+  <h3>Laptop (Refurbished)</h3>
+  <p>₹35,000</p>
+  <button onclick="addToCart('Laptop (Refurbished)',35000)">Add to Cart</button>
+  </div>
+
+
+  <div class="product-card">
+  <img src="images/ssd.jpg" alt="SSD 512GB" onclick="openModal(this)">
+  <h3>SSD 512GB</h3>
+  <p>₹3,500</p>
+  <button onclick="addToCart('SSD 512GB',3500)">Add to Cart</button>
+  </div>
+
+
+  <div class="product-card">
+  <img src="images/ram.jpg" alt="RAM 8GB" onclick="openModal(this)">
+  <h3>RAM 8GB DDR4</h3>
+  <p>₹2,200</p>
+  <button onclick="addToCart('RAM 8GB DDR4',2200)">Add to Cart</button>
+  </div>
+
+
+  <div class="product-card">
+  <img src="images/keyboard-mouse.jpg" alt="Keyboard and Mouse" onclick="openModal(this)">
+  <h3>Keyboard & Mouse Combo</h3>
+  <p>₹700</p>
+  <button onclick="addToCart('Keyboard & Mouse Combo',700)">Add to Cart</button>
+  </div>
+
+
+  <div class="product-card">
+  <img src="images/windows.jpg" alt="Windows Installation" onclick="openModal(this)">
+  <h3>Windows Installation</h3>
+  <p>₹800</p>
+  <button onclick="addToCart('Windows Installation',800)">Add to Cart</button>
+  </div>
+
+
+</section>
+
+<footer>
+  <p>📞 8281860472 | 📧 sysmaxtechnologies@gmail.com</p>
+  <p>© 2025 SysMax Technologies – Cloud Based Business</p>
+</footer>
+
+<!-- Image Zoom Modal -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script src="js/cart.js"></script>
+
+<script>
+  function openModal(img) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImage").src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>

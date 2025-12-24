@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart | SysMax Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+   <a href="index.html" class="logo-link">
+  <div class="logo-area">
+    <img src="images/logo.png" alt="SysMax Technologies Logo" class="logo-img">
+
+    <div class="company-text">
+      <div class="brand-name">
+        <span class="sys">Sys</span><span class="max">Max</span>
+      </div>
+      <div class="tech">Technologies</div>
+    </div>
+  </div>
+</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart 🛒</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Your Cart</h1>
+  <p>Review your order & checkout</p>
+</section>
+
+<section class="about">
+  <div id="cartItems"></div>
+  <h3 id="total"></h3>
+</section>
+
+<section class="about">
+  <h2>Checkout</h2>
+  <form onsubmit="placeOrder(); return false;">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <input type="tel" id="mobile" placeholder="Mobile Number" required><br><br>
+    <textarea id="address" placeholder="Address / Location" required></textarea><br><br>
+    <button type="submit" class="btn">Place Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>📞 8281860472 | 📧 sysmaxtechnologies@gmail.com</p>
+  <p>© 2025 SysMax Technologies – Cloud Based Business</p>
+</footer>
+
+<script src="js/order.js"></script>
+</body>
+</html>

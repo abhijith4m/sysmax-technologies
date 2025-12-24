@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | SysMax Technologies</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section class="hero hero-bg">
+  <div class="hero-content">
+    <h2>Admin Login</h2>
+
+    <input id="username" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+  </div>
+</section>
+
+<script>
+function login() {
+  const user = document.getElementById("username").value;
+  const pass = document.getElementById("password").value;
+
+  if (user === "admin" && pass === "sysmax123") {
+    // ✅ SET LOGIN FLAG
+    localStorage.setItem("loggedIn", "true");
+
+    // ✅ REDIRECT TO ADMIN
+    window.location.href = "admin.html";
+  } else {
+    alert("Invalid username or password");
+  }
+}
+</script>
+
+
+</body>
+</html>

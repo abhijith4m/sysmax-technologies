@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | SysMax Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-link">
+  <div class="logo-area">
+    <img src="images/logo.png" alt="SysMax Technologies Logo" class="logo-img">
+
+    <div class="company-text">
+      <div class="brand-name">
+        <span class="sys">Sys</span><span class="max">Max</span>
+      </div>
+      <div class="tech">Technologies</div>
+    </div>
+  </div>
+</a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart 🛒 <span id="cartCount">0</span></a>
+    <a href="contact.html">Contact</a>
+	<a href="login.html" class="login-link">🔐</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Products</h1>
+  <p>Order Computers & Accessories Online</p>
+</section>
+
+<section class="highlights" id="productContainer">
+  <!-- Products will load here -->
+</section>
+
+<script src="js/cart.js"></script>
+<script src="js/products.js"></script>
+
+<footer>
+  <p>📞 8281860472 | 📧 sysmaxtechnologies@gmail.com</p>
+  <p>© 2025 SysMax Technologies – Cloud Based Business</p>
+</footer>
+
+<!-- Image Zoom Modal -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+<script src="js/cart.js"></script>
+
+<script>
+  function openModal(img) {
+    document.getElementById("imageModal").style.display = "block";
+    document.getElementById("modalImage").src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imageModal").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
